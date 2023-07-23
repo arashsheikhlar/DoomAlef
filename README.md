@@ -19,6 +19,14 @@ The system involves the creation of master weapon blueprints, which contain esse
 The weapons utilize a line trace system, an invisible line projected from the weapon when fired. When the line hits something, damage is applied to the target. This is detailed in the "Fireweapon" function within the Base Weapon blueprint. The UE5's first-person character template includes default controls for looking, moving, and jumping. Additional shooting controls called "IA_Fire" are implemented to handle weapon firing.
 Each weapon type is associated with a specific ammo type and has a maximum ammo capacity. Players can only fire weapons if they have enough ammo. The available ammo types are Bullet, Shell, Rocket, and Cell.
 
+### Weapon bobbing system: 
+when the player character is moving the weapon bobs both left&right and up&down. The weapon does not bob when the player is shooting.
+
+### Weapon Swapping system: 
+this allows the player to change the weapon to a desired one by pressing keys from 1 to 6, only the desired weapon is already picked up.
+
+
+
 ## Gameplay mechanics
 Classic Doom games incorporate a combination of distinct game mechanics. In this particular version, the following mechanics are featured,
 Actions: Players have the ability to shoot enemies using a variety of weapons or resort to hand-to-hand combat when ammunition runs low. Each weapon has unique characteristics that offer different shooting experiences to the player.
