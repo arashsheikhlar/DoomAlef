@@ -19,7 +19,10 @@ Moving and attack animations are given to the enemies by using the engine's flip
 ## Weapon system
 The game offers five different weapons: pistol, shotgun, minigun, plasma rifle, and rocket launching weapon. The player must pick them up from different locations throughout the game.
 The system involves the creation of master weapon blueprints, which contain essential information about a weapon's damage, ammo type, etc. Based on these master blueprints, various child weapons are generated.
-The weapons utilize a line trace system, an invisible line projected from the weapon when fired. When the line hits something, damage is applied to the target. This is detailed in the "Fireweapon" function within the Base Weapon blueprint. The UE5's first-person character template includes default controls for looking, moving, and jumping. Additional shooting controls called "IA_Fire" are implemented to handle weapon firing.
+### Line trace system
+The weapons utilize a line trace system, an invisible line projected from the weapon when fired. When the line hits something, damage is applied to the target. This is detailed in the "Fireweapon" function within the Base Weapon blueprint. 
+### Controls
+The UE5's first-person character template includes default controls for looking, moving, and jumping. Additional shooting controls called "IA_Fire" are implemented to handle weapon firing.
 Each weapon type is associated with a specific ammo type and has a maximum ammo capacity. Players can only fire weapons if they have enough ammo. The available ammo types are Bullet, Shell, Rocket, and Cell.
 
 ### Weapon bobbing system: 
